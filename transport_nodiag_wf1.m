@@ -120,7 +120,7 @@ title('y2 at x = ell');
 
 
 tic
-%% Plot
+%% Plot of physical variable
 %[taxis,xaxis] = meshgrid(time,x);
 figure()
 
@@ -139,7 +139,7 @@ title('transport second equation y2');
 toc
 
 
-%% Plot
+%% Plot of diagonal variable
 %[taxis,xaxis] = meshgrid(time,x);
 figure()
 
