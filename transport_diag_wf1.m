@@ -108,18 +108,22 @@ U(2:Ntot, :) = U_exp(:, :);
 tic
 %% Plot
 
+f=figure();
+
 subplot(1, 2, 1);
 fullState1 = zeros(Nx, Nt); fullState1(2:Nx, :) = U_exp(1:Nx-1, :);
 s = surf(t,x,U(NNB(1, :), :));
 s.EdgeColor = 'none';
 xlabel('time'); ylabel('space'); zlabel('solution 1');
-title('transport first equation');
-
+title('coupled transport (at x=1) y1');
+view(2);
 
 subplot(1, 2, 2);
 fullState2 = U_exp(Nx:2*Nx-1, :);
 s = surf(t,x,U(NNB(2, :), :));
 s.EdgeColor = 'none';
 xlabel('time'); ylabel('space'); zlabel('solution 2');
-title('transport second equation');
+title('coupled transport (at x=1) y2');
+view(2);
+exportgraphics(f,'tr-diag-wf1.pdf','ContentType','image')
 toc

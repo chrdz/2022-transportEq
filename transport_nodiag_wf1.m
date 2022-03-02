@@ -113,47 +113,55 @@ Y2ell = zeros(1, Nt);
 for kk = 1:Nt
     Y2ell(1, kk) = U(NNB(2, Nx), kk);
 end
-figure()
+f=figure();
 plot(t, Y2ell(1, :));
 xlabel('time');
 title('y2 at x = ell');
-
+exportgraphics(f,'tr-nodiag-wf1-BC.pdf','ContentType','image');
 
 tic
 %% Plot of physical variable
 %[taxis,xaxis] = meshgrid(time,x);
-figure()
+f=figure();
 
 subplot(1, 2, 1);
 s = surf(t,x,U(NNB(1, :), :));
 s.EdgeColor = 'none';
 xlabel('time'); ylabel('space'); zlabel('solution 1');
-title('transport first equation y1');
-
+title('2x2 system y1');
+colorbar
+view(2);
 
 subplot(1, 2, 2);
 s = surf(t,x,U(NNB(2, :), :));
 s.EdgeColor = 'none';
 xlabel('time'); ylabel('space'); zlabel('solution 2');
-title('transport second equation y2');
+title('2x2 system y2');
+colorbar
+view(2);
+exportgraphics(f,'tr-nodiag-wf1-y.pdf','ContentType','image')
 toc
 
 
 %% Plot of diagonal variable
 %[taxis,xaxis] = meshgrid(time,x);
-figure()
+f=figure();
 
 subplot(1, 2, 1);
 s = surf(t,x,1/sqrt(2)*(U(NNB(2, :), :) - U(NNB(1, :), :)));
 s.EdgeColor = 'none';
 xlabel('time'); ylabel('space'); zlabel('solution 1');
-title('transport first equation r-');
-
+title('2x2 system r-');
+view(2);
+colorbar
 
 subplot(1, 2, 2);
 s = surf(t,x,1/sqrt(2)*(U(NNB(1, :), :) + U(NNB(2, :), :)));
 s.EdgeColor = 'none';
 xlabel('time'); ylabel('space'); zlabel('solution 2');
-title('transport second equation r+');
+title('2x2 system r+');
+colorbar
+view(2);
+exportgraphics(f,'tr-nodiag-wf1-r.pdf','ContentType','image')
 toc
 
