@@ -1,5 +1,7 @@
-# Transport-equation
-Some simulations involving the transport equation (/pure convection) and 2x2 hyperbolic systems.
+# Simple 2x2 first-order hyperbolic systems
+Simulations involving the transport equation (/pure convection) and 2x2 hyperbolic systems.
+
+For a description of the problems considered here and an explanation of the discretization method, see FEM-coupled-transport.pdf
 
 
 Some pictures:
