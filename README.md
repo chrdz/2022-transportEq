@@ -12,4 +12,4 @@ Some pictures:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="tr-nodiag-wf2-BC.png" alt="tr-nodiag-wf2-BC" height="300"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="tr-nodiag-wf2-y.png" alt="tr-nodiag-wf2-y" height="300"/> &nbsp;&nbsp;&nbsp;&nbsp; <img src="tr-nodiag-wf2-r.png" alt="tr-nodiag-wf2-r" height="300"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="tr-nodiag-wf2-y.png" alt="tr-nodiag-wf2-y" height="250"/> &nbsp; <img src="tr-nodiag-wf2-r.png" alt="tr-nodiag-wf2-r" height="250"/>
